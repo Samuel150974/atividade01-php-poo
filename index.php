@@ -1,14 +1,16 @@
-<!-- 
-Importe a classe Planta.
-Crie um objeto da classe Planta.
-Utilize os dados informados no enunciado. -->
+<?php
+
+require_once "./src/atividade01.php"
+
+
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Plantas</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="/css/estilos.css">
 </head>
 
 <body>
