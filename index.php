@@ -1,6 +1,13 @@
 <?php
 
-require_once "./src/atividade01.php"
+require_once "./src/atividade01-crud.php";
+
+
+$planta = new Planta("Babosa", "planta suculenta", 70);
+
+$planta->setAguaPorDia(70);
+
+
 
 
 ?>
@@ -26,14 +33,14 @@ require_once "./src/atividade01.php"
         <section class="cartao">
 
             <h2>
-                <!-- Exiba o nome popular da planta. -->
+                <?= $planta->getNome() ?>
             </h2>
 
             <div class="informacao">
                 <span class="rotulo">Espécie científica</span>
 
                 <span class="valor">
-                    <!-- Exiba a espécie. -->
+                    <?= $planta->getEspecie() ?>
                 </span>
             </div>
 
@@ -41,7 +48,7 @@ require_once "./src/atividade01.php"
                 <span class="rotulo">Água recomendada por dia</span>
 
                 <span class="valor">
-                    <!-- Exiba a quantidade diária em ml. -->
+                    <?= $planta->getAguaPorDia() ?> ML
                 </span>
             </div>
 
@@ -49,7 +56,7 @@ require_once "./src/atividade01.php"
                 <strong>Recomendação para sete dias</strong>
 
                 <p>
-                    <!-- Exiba a quantidade calculada para sete dia -->
+                    <?= $planta->getCalcularAguaSemanal() ?>
                 </p>
             </div>
 

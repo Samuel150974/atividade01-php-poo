@@ -1,6 +1,7 @@
 <?php
 
-class Plantas 
+class Planta
+
 {
 
 private string $nome;
@@ -30,12 +31,25 @@ public function getAguaPorDia(): int
     return $this->aguaPorDia;
 }
 
-public function getcalcularAguaSemanal(): float
+public function getCalcularAguaSemanal(): float
 {
-    return $this->calcularAguaSemanal;
+    return $this->aguaPorDia*7;
+
 }
 
+public function setNome(string $nome) : void{
+     $this->nome = $nome;
+}
 
+public function setEspecie(string $especie): void
+{
+     $this->especie = $especie;
+}
+
+public function setAguaPorDia(float $aguaPorDia): void
+{
+     $this->aguaPorDia = $aguaPorDia;
+}
 
 
 
