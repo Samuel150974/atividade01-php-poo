@@ -5,7 +5,15 @@ class Plantas
 
 private string $nome;
 private string $especie;
-private int $aguaPorDia;
+private float $aguaPorDia;
+private float $calcularAguaSemanal;
+
+public function __construct(string $nome, string $especie, float $aguaPorDia)
+{
+    $this->nome = $nome; 
+    $this->especie = $especie;
+    $this->aguaPorDia = $aguaPorDia;  
+}
 
 public function getNome()
 {
@@ -19,8 +27,22 @@ public function getEspecie()
 
 public function getAguaPorDia(): int
 {
-    return $this->aguaPorDia
+    return $this->aguaPorDia;
 }
+
+public function getcalcularAguaSemanal(): float
+{
+    return $this->calcularAguaSemanal;
+}
+
+
+
+
+
+
+
+
+
 
 
 
