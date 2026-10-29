@@ -1,6 +1,6 @@
 <?php
 
-require_once "./src/atividade01-crud.php";
+require_once "./src/planta.php";
 
 
 $planta = new Planta("Babosa", "planta suculenta", 70);
